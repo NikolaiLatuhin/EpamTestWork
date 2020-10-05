@@ -11,9 +11,14 @@ namespace Searcher.CUI
         {
             var path = Directory.GetCurrentDirectory();
 
-            var collection = SearcherFiles.FindFilesContainSubstring(path, "island", out var reports);
+            var collectionWithFilesContainSubstring = SearcherFiles.FindFilesContainSubstring(path, "island", out var reports);
 
             Console.WriteLine("Done");
+
+            foreach (var fileName in collectionWithFilesContainSubstring)
+            {
+                Console.WriteLine($"Файл {fileName} содержит подстроку");
+            }
 
             foreach (var report in reports)
             {
