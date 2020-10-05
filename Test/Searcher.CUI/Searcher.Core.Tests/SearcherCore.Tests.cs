@@ -7,7 +7,7 @@ namespace Searcher.Core.Tests
     [TestClass]
     public class SearcherTests
     {
-        string path = Directory.GetCurrentDirectory();
+        readonly string path = Directory.GetCurrentDirectory();
         [TestMethod]
         public void Should_ReturnFileNameContainSubstring_WhenInputRightFile()
         {
@@ -24,7 +24,7 @@ namespace Searcher.Core.Tests
         [TestMethod]
         public void Should_ReturnStringContainSubstring_WhenInputRightFile()
         {
-            var collection = SearcherFiles.FindFilesContainSubstring(path, "island", out var reports);
+            SearcherFiles.FindFilesContainSubstring(path, "island", out var reports);
             var expected = "\r\nand go back to the time when my father kept the Admiral Benbow inn island";
             var s = reports[1].ContainingString;
 
