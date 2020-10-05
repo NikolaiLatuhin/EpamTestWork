@@ -10,8 +10,10 @@ namespace Searcher.CUI
         static void Main(string[] args)
         {
             var path = Directory.GetCurrentDirectory();
+            Console.WriteLine("Введите подстроку");
+            var substring = Console.ReadLine(); // Пример island
 
-            var collectionWithFilesContainSubstring = SearcherFiles.FindFilesContainSubstring(path, "island", out var reports);
+            var collectionWithFilesContainSubstring = SearcherFiles.FindFilesContainSubstring(path, substring, out var reports);
 
             Console.WriteLine("Done");
 
