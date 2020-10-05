@@ -5,11 +5,11 @@ namespace Searcher.Core
 {
     public static class MyExtensions
     {
-        public static IEnumerable<string> ExctractSubstrings(this string inputString, string subString)
+        public static List<string> ExctractSubstrings(this string inputString, string subString)
         {
             var sentences = inputString.Split('.', '!' , ',' , '?');
             var substringSentences = sentences.Where(s => s.Contains(subString));
-            return substringSentences;
+            return substringSentences.ToList();
         }
 
         public static bool IsNullOrEmpty<T>(this IEnumerable<T> source)

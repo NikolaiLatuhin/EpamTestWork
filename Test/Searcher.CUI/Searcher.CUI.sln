@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searcher.CUI", "Searcher.CU
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searcher.Core", "Searcher.Core\Searcher.Core.csproj", "{10345376-A41F-46D6-912B-02092CA25F3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searcher.Core.Tests", "Searcher.Core.Tests\Searcher.Core.Tests.csproj", "{7AD78E26-BEC2-450B-8839-6C5163CF23ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{10345376-A41F-46D6-912B-02092CA25F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10345376-A41F-46D6-912B-02092CA25F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10345376-A41F-46D6-912B-02092CA25F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AD78E26-BEC2-450B-8839-6C5163CF23ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD78E26-BEC2-450B-8839-6C5163CF23ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD78E26-BEC2-450B-8839-6C5163CF23ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD78E26-BEC2-450B-8839-6C5163CF23ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
